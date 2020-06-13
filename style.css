@@ -14,9 +14,8 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   height: 100%;
-  color: #EEEEEE;
+  color: white;
   direction: rtl;
-
 }
 
 /************* GENERIC CLASSES *************/
@@ -90,6 +89,7 @@ html {
 .language {
   margin-right: 20px;
   font-size: 0.8rem;
+  color: #bbbbbb;
 }
 
 .nav_links_div {
@@ -99,7 +99,7 @@ html {
 
 .nav_links_div a {
   text-decoration: none;
-  color: #EEEEEE;
+  color: white;
   margin-left: 40px;
 }
 
@@ -222,7 +222,7 @@ html {
 .service_card {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   max-height: auto;
   width: 50vw;
   margin: 10px 7%;
@@ -234,14 +234,13 @@ html {
   cursor: pointer;
 }
 
-.service_name {
+.service_name_icon_row {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: auto 0;
 }
 
-.service_card:hover {
+.active_card, .service_card:hover {
   background-color: #232323;
 }
 
@@ -252,11 +251,15 @@ html {
 }
 
 .service_card h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .service_details {
+  display: none;
   margin: 2% 12% 0 5%;
+  font-size: 1.1rem;
+  color: #cccccc;
+  /* overflow: hidden; */
 }
 
 /************* CONTACT-US SECTION *************/
@@ -302,14 +305,14 @@ html {
   display: flex;
   justify-content: space-between;
   direction: ltr;
-  margin: 0 22px;
+  margin: 0 5px;
   font-size: 0.8rem;
-  color: #B9B9B9;
+  color: #bbbbbb;
 }
 
 .copyright_p {
   margin: 0 auto;
-  transform: translateX(-50px);
+  transform: translateX(-45px);
 }
 
 .created-by_p a {

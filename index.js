@@ -9,7 +9,7 @@
 
   To-Do:
   - cards open & close.
-  - multiple languages.
+  - multiple languages (change in logo too).
   - navbar: responsive hamburger menue.
 */
 
@@ -75,7 +75,7 @@ function serviceTemplate(service) {
 
   // <p class="service_details">${service.details}</p>
   return `<div class="service_card collapsible">
-    <div class="service_name">
+    <div class="service_name_icon_row">
     <img class="service_icon" src="${service.icon}" alt="">
     <h3>${service.service}</h3>
     </div>
@@ -86,3 +86,19 @@ function serviceTemplate(service) {
 }
 
 $(".services_cards").html(`${services.map(serviceTemplate).join("")}`);
+
+// making Service Cards collapsible
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active_card");
+    var content = this.querySelector('.service_details');
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
