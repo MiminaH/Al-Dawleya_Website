@@ -66,14 +66,11 @@ const services = [{
 function serviceTemplate(service) {
 
   let p = "";
-  console.log("first" + p);
 
   service.details.forEach((detail) => {
     p += `<p>${detail}</p>`;
   });
 
-
-  // <p class="service_details">${service.details}</p>
   return `<div class="service_card collapsible">
     <div class="service_name_icon_row">
     <img class="service_icon" src="${service.icon}" alt="">
@@ -88,17 +85,23 @@ function serviceTemplate(service) {
 $(".services_cards").html(`${services.map(serviceTemplate).join("")}`);
 
 // making Service Cards collapsible
-var coll = document.getElementsByClassName("collapsible");
-var i;
+let coll = document.getElementsByClassName("collapsible");
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active_card");
-    var content = this.querySelector('.service_details');
+    let content = this.querySelector('.service_details');
+    // collapsing card
     if (content.style.display === "block") {
       content.style.display = "none";
     } else {
       content.style.display = "block";
+    }
+
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
     }
   });
 }
