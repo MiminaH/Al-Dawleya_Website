@@ -3,18 +3,32 @@
 /* Get from Hossam:
   - website domain.
   - map location.
-  - their pictures.
-  - feedback so far.
+  - their pictures / link to facebook page.
   - content in different the required languages.
 
   To-Do:
-  - cards open & close.
   - multiple languages (change in logo too).
-  - navbar: responsive hamburger menue.
 */
 
+// NAVBAR -------------------------------------
+/* Toggle between showing/hiding the navigation menu when hamburger menu is clicked */
+function menuClick() {
+  const x = $('.navlinks_subcontainer');
 
-// OUR SERVICES SECTION ---------------------------------------
+// checking z-index to apply below for mobile screens only.
+  if (x.css('z-index') == '1'){
+    if (x.css('display') == 'flex') {
+      // x.toggleClass(".nav_links_div");   toggle class to trigger reverse animation.
+      // x.toggleClass(".nav_links_div");
+      x.css('display', 'none');
+    } else {
+      x.css('display', 'flex');
+    }
+  }
+}
+
+
+// OUR SERVICES SECTION -------------------------------------
 const services = [{
     "service": "إنهاء إجراءات تسجيل عقود البيع الإبتدائية بالشهر العقاري وإستخراج العقد النهائي",
     "icon": "images\\icons\\rental-house-contract icon.png",
@@ -62,9 +76,7 @@ const services = [{
 ];
 
 
-
 function serviceTemplate(service) {
-
   let p = "";
 
   service.details.forEach((detail) => {
@@ -82,7 +94,9 @@ function serviceTemplate(service) {
     </div>`;
 }
 
+
 $(".services_cards").html(`${services.map(serviceTemplate).join("")}`);
+
 
 // making Service Cards collapsible
 let coll = document.getElementsByClassName("collapsible");

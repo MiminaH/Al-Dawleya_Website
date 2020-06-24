@@ -7,26 +7,52 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title></title>
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+  <title>Lawyers Hurghada </title>
 </head>
 
 <body>
-  <div class="navbar_div">
-    <div class="language">Language</div>
 
-    <div class="nav_links_div">
-      <a href="#">الرئيسية</a>
-      <a href="#about-us_section">من نحن</a>
-      <a href="#our-services_section">خدماتنا</a>
-      <div class="contact_us_btn_div">
-        <a href="#contact-us_section">تواصل معنا</a>
+  <div class="navbar_container">
+    <a class="hamburger_icon" onclick="menuClick()">
+      <i class="fas fa-bars fa-2x"></i>
+    </a>
+
+    <div class="navlinks_subcontainer">
+
+      <a href="#" class="selected_language">
+      <img class="flag" src="images\flags\Egyptian.png" alt=""></a>
+
+      <div class="language_menu">
+        <a href="#" class="language">
+          <img class="flag" src="images\flags\Egyptian.png" alt="">
+          <p>عربي</p>
+        </a>
+        <a href="#" class="language">
+          <img class="flag" src="images\flags\British.png" alt="">
+          <p>English</p>
+        </a>
+        <a href="#" class="language">
+          <img class="flag" src="images\flags\German.png" alt="">
+          <p>Deutsch</p>
+        </a>
+
       </div>
+
+      <a href="#" onclick="menuClick()">الرئيسية</a>
+      <a href="#about-us" onclick="menuClick()">من نحن</a>
+      <a href="#our-services_section" onclick="menuClick()">خدماتنا</a>
+      <a class="contact-us_btn" href="#contact-us" onclick="menuClick()">تواصل معنا</a>
     </div>
+
     <div class="logo">
       <img src="images\Logo.jpg" alt="">
       <p class="logo_text">الدولية</p>
     </div>
   </div>
+
 
   <div class="header_div">
     <div class="header_text">
@@ -34,93 +60,97 @@
     </div>
   </div>
 
-  <section id="about-us_section" class="light_section">
-    <div class="section_title_div">
-      <div class="section_title_horizontal_line"></div>
-      <div class="section_title_vertical_line"></div>
-      <h1 class="section_title">من نحن</h1>
+
+  <section id="about-us" class="light">
+    <div class="title_container">
+      <div class="horizontal_line"></div>
+      <div class="vertical_line"></div>
+      <h1 class="text">من نحن</h1>
     </div>
 
-    <div class="about-us_text_div">
+    <div class="text_container">
       <p><span>السيرة الذاتية:</span> المحاميان بالإستئناف الأعلى ومجلس الدولة.</p>
       <p><span>السيرة المهنية:</span> عضو إتحاد المحاميين العرب لدى المحاكم الجنائية والمدنية والعسكرية ومحاكم الأسرة.</p>
     </div>
 
-    <div class="lawyers_div">
-      <div class="person_div">
-        <div class="person_img"></div>
+    <div class="lawyers_container">
+      <div class="lawyer_subcontainer">
+        <img src="images\person1.jpg" alt="">
         <p>حسام فؤاد أحمد عبد الوهاب</p>
       </div>
-      <div class="person_div">
-        <div class="person_img"></div>
+      <div class="lawyer_subcontainer">
+        <img src="images\person2.jpg" alt="">
         <p>على إبراهيم الجندي</p>
       </div>
     </div>
   </section>
 
-  <section id="our-services_section" class="dark_section">
-    <div class="section_title_div">
-      <div class="section_title_horizontal_line"></div>
-      <div class="section_title_vertical_line"></div>
-      <h1 class="section_title">خدماتنا</h1>
+
+  <section id="our-services_section" class="dark">
+    <div class="title_container">
+      <div class="horizontal_line"></div>
+      <div class="vertical_line"></div>
+      <h1 class="text">خدماتنا</h1>
     </div>
 
     <div class="services_cards"></div>
-
   </section>
 
-  <section id="contact-us_section">
+  <section id="contact-us">
 
-    <div class="section_title_div">
-      <div class="section_title_horizontal_line"></div>
-      <div class="section_title_vertical_line"></div>
-      <h1 class="section_title">تواصل معنا</h1>
+    <div class="title_container">
+      <div class="horizontal_line"></div>
+      <div class="vertical_line"></div>
+      <h1 class="text">تواصل معنا</h1>
     </div>
 
-    <div class="contact-us_details_parent">
-      <div class="contact-us_details_column">
-        <div class="contact_detail">
-          <img class="contact_icon" src="images\SVG\Icon zocial-email.svg" alt="">
-          <p class="contact_text">Hossam1983ale@gmail.com</p>
+    <div class="contact-us_container">
+      <div class="details_column">
+        <div class="contact_container">
+          <img src="images\SVG\Icon zocial-email.svg" alt="">
+          <p>Hossam1983ale@gmail.com</p>
         </div>
-        <div class="contact_detail">
-          <img class="contact_icon" src="images\SVG\Icon zocial-email.svg" alt="">
-          <p class="contact_text">Alindyly31@gmail.com</p>
+        <div class="contact_container">
+          <img src="images\SVG\Icon zocial-email.svg" alt="">
+          <p>Alindyly31@gmail.com</p>
         </div>
-        <div class="contact_detail">
-          <img class="contact_icon" src="images\SVG\Icon awesome-whatsapp.svg" alt="">
-          <p class="contact_text">+2 010 0435 1757</p>
+        <div class="contact_container">
+          <a href="https://api.whatsapp.com/send?phone=201004351757">
+          <img src="images\SVG\Icon awesome-whatsapp.svg" alt=""></a>
+          <p>+2 010 0435 1757</p>
         </div>
-        <div class="contact_detail">
-          <img class="contact_icon" src="images\SVG\Icon awesome-whatsapp.svg" alt="">
-          <p class="contact_text">+2 010 0392 1020</p>
+        <div class="contact_container">
+          <a href="https://api.whatsapp.com/send?phone=201003921020">
+          <img src="images\SVG\Icon awesome-whatsapp.svg" alt=""></a>
+          <p>+2 010 0392 1020</p>
         </div>
-        <div class="contact_detail">
-          <img class="contact_icon" src="images\SVG\Icon awesome-facebook-f.svg" alt="">
-          <p class="contact_text">Hossam Fouad</p>
+        <div class="contact_container">
+          <img src="images\SVG\Icon awesome-facebook-f.svg" alt="">
+          <p>Hossam Fouad</p>
         </div>
       </div>
 
-      <div class="contact-us_details_column">
-        <div class="contact_detail">
-          <img class="contact_icon" src="images\SVG\Icon material-location-on.svg" alt="">
+      <div class="details_column">
+        <div class="contact_container">
+          <img src="images\SVG\Icon material-location-on.svg" alt="">
           <p>شارع الشيراتون, الغردقة البحر الأحمر, مصر </p>
         </div>
       </div>
     </div>
 
-    <div class="copyright_div">
-      <p class="created-by_p">Create by <a href="https://miminah.github.io/MiminaWebsite/tech.html">Mimina</a></p>
-      <p class="copyright_p">© Al-Dawleya 2020.</p>
+    <div class="copyright_container">
+      <p class="created-by">Create by <a href="https://miminah.github.io/MiminaWebsite/tech.html">Mimina</a></p>
+      <p class="copyright">© Al-Dawleya 2020.</p>
     </div>
   </section>
 
 </body>
 
+
 <footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="index.js" charset="utf-8"></script>
+  <script src="JS/index.js" charset="utf-8"></script>
 
 </footer>
 

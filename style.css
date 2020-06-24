@@ -11,64 +11,70 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  width: auto;
   overflow-x: hidden;
-  /* height: 100%; */
-  width: 100vw;
+  scroll-behavior: smooth;
   color: white;
   direction: rtl;
 }
 
 /************* GENERIC CLASSES *************/
-.light_section {
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.light {
   background-color: #343434;
 }
 
-.dark_section {
-  display: flex;
-  flex-direction: column;
+.dark {
   background-color: #232323;
 }
 
-.section_title_div {
+.title_container {
   display: flex;
   align-items: center;
   align-self: flex-start;
-  margin: 90px 0 30px;
+  margin: 10vh 0 30px;
 }
 
-.section_title_horizontal_line {
+.title_container .horizontal_line {
   display: flex;
   flex-direction: column;
   margin: auto 0;
   content: '';
   width: 15vw;
   height: 3px;
+  background: url("images\\gold-texture.jpg");
   border-radius: 5px;
-  background: url("images\\textures\\gold-texture2.jpg");
   color: transparent;
   background-size: cover;
   background-clip: text;
 }
 
-.section_title_vertical_line {
+.title_container .vertical_line {
   margin: 0 20px 0 15px;
   content: '';
   width: 3px;
   height: 40px;
   border-radius: 5px;
-  background: url("images\\textures\\gold-texture2.jpg");
+  background: url("images\\gold-texture.jpg");
   color: transparent;
   background-size: cover;
   background-clip: text;
 }
 
-.section_title {
+.title_container .text {
   font-size: 2.2rem;
-  background: url("images\\textures\\gold-texture2.jpg");
+  background: url("images\\gold-texture.jpg");
   color: transparent;
   background-size: cover;
   background-clip: text;
@@ -76,54 +82,72 @@ html {
 }
 
 /************* NAVBAR *************/
-.navbar_div {
+.hamburger_icon {
+  display: none;
+}
+
+.navbar_container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   top: 0;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
   background-color: black;
 }
 
-.language {
-  margin-right: 20px;
-  font-size: 0.8rem;
-  color: #bbbbbb;
+.navbar_container .navlinks_subcontainer {
+  margin-right: 15px;
+  font-size: 1.3rem;
 }
 
-.nav_links_div {
-  margin: 0 8% 0 auto;
-  font-size: 1.2rem;
+.navbar_container .navlinks_subcontainer .selected_language {
+  margin: 0 5px 0 8vw;
 }
 
-.nav_links_div a {
-  text-decoration: none;
-  color: white;
+.navbar_container .navlinks_subcontainer .flag {
+  max-height: 25px;
+  max-width: 25px;
+  border-radius: 50px;
+  border: 1px solid gold;
+  margin-left: 20px
+}
+
+.language_menu {
+  position: absolute;
+  background-color: black;
+}
+
+.navlinks_subcontainer .language_menu .language {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 10px;
+}
+
+.language:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+
+.navbar_container .navlinks_subcontainer [onclick^="menuClick()"] {
   margin-left: 40px;
 }
 
-.nav_links_div a:hover {
+.navbar_container .navlinks_subcontainer [onclick^="menuClick()"]:hover {
   color: #C1A57B;
 }
 
-.contact_us_btn_div {
-  display: inline;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  background: url("images\\textures\\gold-texture2.jpg");
+.navbar_container .navlinks_subcontainer .contact-us_btn {
+  background: url("images\\gold-texture.jpg");
   background-size: contain;
-  padding: 0.45rem 0.7rem;
+  padding: 5px 10px;
   border-radius: 5px;
 }
 
-.contact_us_btn_div a {
-  margin: 0 auto;
-}
-
-.contact_us_btn_div a:hover {
+.navbar_container .navlinks_subcontainer .contact-us_btn:hover {
   color: #232323;
 }
 
@@ -131,7 +155,7 @@ html {
   position: relative;
   width: 90px;
   height: 70px;
-  margin-left: 10%;
+  margin-left: 9vw;
   text-align: center;
 }
 
@@ -157,7 +181,7 @@ html {
   background-size: cover;
   min-height: 90vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images\\header\\header.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images\\header.jpg");
 }
 
 .header_text {
@@ -170,44 +194,37 @@ html {
 }
 
 /************* ABOUT-US SECTION *************/
-.about-us_text_div p {
+#about-us .text_container p {
   font-size: 1.4rem;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
-.about-us_text_div span {
+#about-us .text_container span {
   font-weight: bold;
 }
 
-.lawyers_div {
+#about-us .lawyers_container {
   display: flex;
-  margin: 7vh 0 10vh;
+  flex-flow: wrap;
+  justify-content: center;
+  margin: 5vh auto 0;
 }
 
-.person_div {
+#about-us .lawyers_container .lawyer_subcontainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  margin: 0 5vw 10vh;
 }
 
-.person_img {
+#about-us .lawyers_container .lawyer_subcontainer img {
   height: 400px;
   width: 275px;
-  margin: 0 5vw 10px;
+  margin-bottom: 10px;
   border: 1px solid black;
   border-radius: 10px;
-}
-
-.person_div:nth-child(1) .person_img {
-  background-image: url("images\\persons\\person1.jpg");
-  background-size: cover;
-}
-
-.person_div:nth-child(2) .person_img {
-  background-image: url("images\\persons\\person2.jpg");
-  background-size: cover;
 }
 
 /************* SERVICES SECTION *************/
@@ -263,7 +280,7 @@ html {
 }
 
 /************* CONTACT-US SECTION *************/
-#contact-us_section {
+#contact-us {
   display: flex;
   flex-direction: column;
   background-position: center;
@@ -271,50 +288,161 @@ html {
   background-size: cover;
   min-height: 50vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("images\\contact-us\\contact-us 6.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("images\\contact-us.jpg");
 }
 
-.contact-us_details_parent {
+#contact-us .contact-us_container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.contact-us_details_column {
+#contact-us .contact-us_container .details_column {
   margin-bottom: 5vh;
 }
 
-.contact_detail {
+#contact-us .contact-us_container .details_column .contact_container {
   display: flex;
-  margin: 0 10vw;
+  margin: 0 8vw;
 }
 
-.contact_icon {
+.contact_container a {
+  height: 40px;
+}
+
+.contact_container img {
   height: 25px;
   width: 25px;
   margin: 0 0 15px 25px;
 }
 
-.contact_text {
+.contact_container img:hover {
+  opacity: 0.5;
+}
+
+.contact_container p {
   direction: ltr;
   font-family: 'PT Serif', serif;
 }
 
 /************* FOOTER *************/
-.copyright_div {
+.copyright_container {
   display: flex;
   justify-content: space-between;
   direction: ltr;
-  margin: 0 20px;
+  width: 100vw;
   font-size: 0.8rem;
   color: #bbbbbb;
 }
 
-.copyright_p {
+.copyright_container .copyright {
   margin: 0 auto;
-  transform: translateX(-50px);
+  transform: translateX(-20px);
 }
 
-.created-by_p a {
+.copyright_container .created-by {
+  /* margin-left: 15px; */
+}
+
+.created-by a {
   color: #03a9f4;
+}
+
+@media only screen and (max-width: 750px) {
+
+  /* GENERIC -------------------------------------------- */
+  .title_container .horizontal_line {
+    display: none;
+  }
+
+  .title_container .vertical_line {
+    margin: 0 25px 0 15px;
+  }
+
+  /* NAVBAR -------------------------------------------- */
+  .hamburger_icon {
+    display: block;
+    margin: 2%;
+  }
+
+  .hamburger_icon i {
+    margin-right: 10px;
+  }
+
+  .navbar_container .navlinks_subcontainer .language {
+    display: none;
+    margin-left: 0;
+  }
+
+  .navbar_container .navlinks_subcontainer {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 70px);
+    position: fixed;
+    z-index: 1;
+    font-size: 1.7rem;
+    margin-right: 0;
+    top: 70px;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.9);
+    animation: open 0.4s ease-in forwards;
+  }
+
+  @keyframes open {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 100vw;
+    }
+  }
+
+  .navbar_container .navlinks_subcontainer a {
+    margin-left: 0;
+  }
+
+  .logo {
+    margin-left: 1%;
+  }
+
+  /* HEADER -------------------------------------------- */
+  .header_div {
+    min-height: 70vh;
+  }
+
+  .header_text h1 {
+    text-align: center;
+    width: 240px;
+    font-size: 1.9rem;
+    line-height: 2.6rem;
+  }
+
+  /* ABOUT-US -------------------------------------------- */
+  #about-us .text_container p {
+    font-size: 1.2rem;
+    margin: 0 50px 30px 30px;
+  }
+
+  /* OUR SERVICES ------------------------------------- */
+  .service_card {
+    width: 70vw;
+    margin: 5px 15vw 10px;
+    padding: 10px;
+  }
+
+  .service_icon {
+    margin-left: 20px;
+  }
+
+  .service_card h3 {
+    font-size: 1.2rem;
+  }
+
+  /* FOOTER -------------------------------------------- */
+  .copyright_container .copyright {
+    margin: 0;
+  }
 }
