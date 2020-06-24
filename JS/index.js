@@ -18,12 +18,21 @@ function menuClick() {
 // checking z-index to apply below for mobile screens only.
   if (x.css('z-index') == '1'){
     if (x.css('display') == 'flex') {
-      // x.toggleClass(".nav_links_div");   toggle class to trigger reverse animation.
-      // x.toggleClass(".nav_links_div");
       x.css('display', 'none');
     } else {
       x.css('display', 'flex');
     }
+  }
+}
+
+// Language Menu Toggle
+function langMenuToggle() {
+  const menu = $('.language_menu');
+
+  if (menu.css('display') == 'none') {
+    menu.css('display', 'block');
+  } else {
+    menu.css('display', 'none');
   }
 }
 

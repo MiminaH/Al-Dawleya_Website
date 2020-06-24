@@ -22,23 +22,21 @@
 
     <div class="navlinks_subcontainer">
 
-      <a href="#" class="selected_language">
-      <img class="flag" src="images\flags\Egyptian.png" alt=""></a>
+      <div class="current_language" onclick="langMenuToggle()"></div>
 
       <div class="language_menu">
-        <a href="#" class="language">
+        <a class="language" onclick="langMenuToggle(); menuClick();">
           <img class="flag" src="images\flags\Egyptian.png" alt="">
           <p>عربي</p>
         </a>
-        <a href="#" class="language">
+        <a class="language" onclick="langMenuToggle(); menuClick();">
           <img class="flag" src="images\flags\British.png" alt="">
           <p>English</p>
         </a>
-        <a href="#" class="language">
+        <a class="language" onclick="langMenuToggle(); menuClick();">
           <img class="flag" src="images\flags\German.png" alt="">
           <p>Deutsch</p>
         </a>
-
       </div>
 
       <a href="#" onclick="menuClick()">الرئيسية</a>
@@ -47,7 +45,7 @@
       <a class="contact-us_btn" href="#contact-us" onclick="menuClick()">تواصل معنا</a>
     </div>
 
-    <div class="logo">
+    <div class="logo_container">
       <img src="images\Logo.jpg" alt="">
       <p class="logo_text">الدولية</p>
     </div>
@@ -106,32 +104,32 @@
 
     <div class="contact-us_container">
       <div class="details_column">
-        <div class="contact_container">
+        <div class="contact">
           <img src="images\SVG\Icon zocial-email.svg" alt="">
           <p>Hossam1983ale@gmail.com</p>
         </div>
-        <div class="contact_container">
+        <div class="contact">
           <img src="images\SVG\Icon zocial-email.svg" alt="">
           <p>Alindyly31@gmail.com</p>
         </div>
-        <div class="contact_container">
+        <div class="contact">
           <a href="https://api.whatsapp.com/send?phone=201004351757">
-          <img src="images\SVG\Icon awesome-whatsapp.svg" alt=""></a>
+            <img src="images\SVG\Icon awesome-whatsapp.svg" alt=""></a>
           <p>+2 010 0435 1757</p>
         </div>
-        <div class="contact_container">
+        <div class="contact">
           <a href="https://api.whatsapp.com/send?phone=201003921020">
-          <img src="images\SVG\Icon awesome-whatsapp.svg" alt=""></a>
+            <img src="images\SVG\Icon awesome-whatsapp.svg" alt=""></a>
           <p>+2 010 0392 1020</p>
         </div>
-        <div class="contact_container">
+        <div class="contact">
           <img src="images\SVG\Icon awesome-facebook-f.svg" alt="">
           <p>Hossam Fouad</p>
         </div>
       </div>
 
       <div class="details_column">
-        <div class="contact_container">
+        <div class="contact">
           <img src="images\SVG\Icon material-location-on.svg" alt="">
           <p>شارع الشيراتون, الغردقة البحر الأحمر, مصر </p>
         </div>

@@ -11,7 +11,7 @@
 }
 
 html {
-  width: auto;
+  width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   color: white;
@@ -23,7 +23,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 
 a {
@@ -100,11 +100,40 @@ a {
 
 .navbar_container .navlinks_subcontainer {
   margin-right: 15px;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
-.navbar_container .navlinks_subcontainer .selected_language {
+.navbar_container .navlinks_subcontainer .current_language {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("images\\flags\\Egyptian.png");
+  background-size: cover;
+  background-position: center;
   margin: 0 5px 0 8vw;
+  border: 1px solid gold;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.language_menu {
+  display: none;
+  position: absolute;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.navlinks_subcontainer .language_menu .language {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.language:hover {
+  background-color: rgb(255, 255, 255, 0.8);
+  color: black;
 }
 
 .navbar_container .navlinks_subcontainer .flag {
@@ -115,29 +144,12 @@ a {
   margin-left: 20px
 }
 
-.language_menu {
-  position: absolute;
-  background-color: black;
+.navbar_container .navlinks_subcontainer a {
+  margin-left: 5vw;
 }
 
-.navlinks_subcontainer .language_menu .language {
-  display: flex;
-  justify-content: space-between;
-  margin: 5px 10px;
-}
-
-.language:hover {
-  background-color: lightgrey;
-  color: black;
-}
-
-
-.navbar_container .navlinks_subcontainer [onclick^="menuClick()"] {
-  margin-left: 40px;
-}
-
-.navbar_container .navlinks_subcontainer [onclick^="menuClick()"]:hover {
-  color: #C1A57B;
+.navbar_container .navlinks_subcontainer a:hover {
+  color: gold;
 }
 
 .navbar_container .navlinks_subcontainer .contact-us_btn {
@@ -151,7 +163,7 @@ a {
   color: #232323;
 }
 
-.logo {
+.logo_container {
   position: relative;
   width: 90px;
   height: 70px;
@@ -159,12 +171,12 @@ a {
   text-align: center;
 }
 
-.logo img {
+.logo_container img {
   width: 90px;
   height: 70px;
 }
 
-.logo_text {
+.logo_container .logo_text {
   position: absolute;
   bottom: 0px;
   font-size: 1rem;
@@ -299,28 +311,29 @@ a {
 
 #contact-us .contact-us_container .details_column {
   margin-bottom: 5vh;
+  width: auto;
 }
 
-#contact-us .contact-us_container .details_column .contact_container {
+#contact-us .contact-us_container .details_column .contact {
   display: flex;
   margin: 0 8vw;
 }
 
-.contact_container a {
+.contact a {
   height: 40px;
 }
 
-.contact_container img {
+.contact img {
   height: 25px;
   width: 25px;
   margin: 0 0 15px 25px;
 }
 
-.contact_container img:hover {
+.contact img:hover {
   opacity: 0.5;
 }
 
-.contact_container p {
+.contact p {
   direction: ltr;
   font-family: 'PT Serif', serif;
 }
@@ -341,7 +354,7 @@ a {
 }
 
 .copyright_container .created-by {
-  /* margin-left: 15px; */
+  margin-left: 20px;
 }
 
 .created-by a {
@@ -426,10 +439,15 @@ a {
     margin: 0 50px 30px 30px;
   }
 
+  #about-us .lawyers_container .lawyer_subcontainer img {
+    height: 300px;
+    width: 225px;
+  }
+
   /* OUR SERVICES ------------------------------------- */
   .service_card {
-    width: 70vw;
-    margin: 5px 15vw 10px;
+    width: 75vw;
+    margin: 0 0 15px;
     padding: 10px;
   }
 
@@ -444,5 +462,6 @@ a {
   /* FOOTER -------------------------------------------- */
   .copyright_container .copyright {
     margin: 0;
+    transform: translateX(-10px);
   }
 }
