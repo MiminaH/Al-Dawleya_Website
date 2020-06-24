@@ -13,7 +13,7 @@
 // NAVBAR -------------------------------------
 /* Toggle between showing/hiding the navigation menu when hamburger menu is clicked */
 function menuClick() {
-  const x = $('.navlinks_subcontainer');
+  const x = $('.navlinks_container');
 
 // checking z-index to apply below for mobile screens only.
   if (x.css('z-index') == '1'){
