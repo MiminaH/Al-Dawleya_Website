@@ -29,6 +29,8 @@ section {
 a {
   text-decoration: none;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .light {
@@ -98,19 +100,20 @@ a {
   background-color: black;
 }
 
-.navbar_container .navlinks_subcontainer {
-  margin-right: 15px;
+.navbar_container .navlinks_container {
+  display: flex;
+  align-items: center;
   font-size: 1.4rem;
 }
 
-.navbar_container .navlinks_subcontainer .current_language {
+.navbar_container .navlinks_container .current_language {
   display: inline-block;
   width: 25px;
   height: 25px;
   background-image: url("images\\flags\\Egyptian.png");
   background-size: cover;
   background-position: center;
-  margin: 0 5px 0 8vw;
+  margin: 0 20px 0 8vw;
   border: 1px solid gold;
   border-radius: 50px;
   cursor: pointer;
@@ -123,9 +126,10 @@ a {
   border-radius: 5px;
 }
 
-.navlinks_subcontainer .language_menu .language {
+.navlinks_container .language_menu .language {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -136,30 +140,30 @@ a {
   color: black;
 }
 
-.navbar_container .navlinks_subcontainer .flag {
-  max-height: 25px;
-  max-width: 25px;
+.navbar_container .navlinks_container .flag {
+  height: 25px;
+  width: 25px;
   border-radius: 50px;
   border: 1px solid gold;
-  margin-left: 20px
+  margin-left: 20px;
 }
 
-.navbar_container .navlinks_subcontainer a {
+.navbar_container .navlinks_container [onclick^="menuClick()"] {
   margin-left: 5vw;
 }
 
-.navbar_container .navlinks_subcontainer a:hover {
+.navbar_container .navlinks_container [onclick^="menuClick()"]:hover {
   color: gold;
 }
 
-.navbar_container .navlinks_subcontainer .contact-us_btn {
+.navbar_container .navlinks_container .contact-us_btn {
   background: url("images\\gold-texture.jpg");
   background-size: contain;
   padding: 5px 10px;
   border-radius: 5px;
 }
 
-.navbar_container .navlinks_subcontainer .contact-us_btn:hover {
+.navbar_container .navlinks_container .contact-us_btn:hover {
   color: #232323;
 }
 
@@ -311,7 +315,6 @@ a {
 
 #contact-us .contact-us_container .details_column {
   margin-bottom: 5vh;
-  width: auto;
 }
 
 #contact-us .contact-us_container .details_column .contact {
@@ -354,7 +357,7 @@ a {
 }
 
 .copyright_container .created-by {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .created-by a {
@@ -382,17 +385,16 @@ a {
     margin-right: 10px;
   }
 
-  .navbar_container .navlinks_subcontainer .language {
-    display: none;
-    margin-left: 0;
+  .language_menu {
+    position: relative;
   }
 
-  .navbar_container .navlinks_subcontainer {
+  .navbar_container .navlinks_container {
     display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 50px);
     position: fixed;
     z-index: 1;
     font-size: 1.7rem;
@@ -413,11 +415,11 @@ a {
     }
   }
 
-  .navbar_container .navlinks_subcontainer a {
+  .navbar_container .navlinks_container a {
     margin-left: 0;
   }
 
-  .logo {
+  .logo_container {
     margin-left: 1%;
   }
 
@@ -459,9 +461,18 @@ a {
     font-size: 1.2rem;
   }
 
+  /* CONTACT-US -------------------------------------------- */
+  #contact-us .contact-us_container .details_column {
+    width: 95vw;
+  }
+
   /* FOOTER -------------------------------------------- */
   .copyright_container .copyright {
     margin: 0;
     transform: translateX(-10px);
+  }
+
+  .copyright_container .created-by {
+    margin-left: 5px;
   }
 }
