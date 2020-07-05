@@ -10,146 +10,153 @@
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
 
-  <title>Lawyers Hurghada </title>
+  <title lang="en" name="title">Lawyers Hurghada </title>
 </head>
 
-<body>
+<body onload="showLoading(2000)">
 
-  <div class="navbar_container">
-    <a class="hamburger_icon" onclick="menuClick()">
-      <i class="fas fa-bars fa-2x"></i>
-    </a>
+  <div id="loader"></div>
 
-    <div class="navlinks_container">
+  <div style="display:none;" id="rootDiv">
 
-      <div class="current_language" onclick="langMenuToggle()"></div>
+    <div class="navbar_container">
+      <a class="hamburger_icon" onclick="hamburgerToggle()">
+        <i lang="en" class="fas fa-bars fa-2x"></i>
+      </a>
 
-      <div class="language_menu">
-        <a class="language" onclick="langMenuToggle(); menuClick();">
-          <img class="flag" src="images\flags\Egyptian.png" alt="">
-          <p>عربي</p>
-        </a>
-        <a class="language" onclick="langMenuToggle(); menuClick();">
-          <img class="flag" src="images\flags\British.png" alt="">
-          <p>English</p>
-        </a>
-        <a class="language" onclick="langMenuToggle(); menuClick();">
-          <img class="flag" src="images\flags\German.png" alt="">
-          <p>Deutsch</p>
-        </a>
+      <div class="navlinks_container">
+
+        <div lang="en" class="current_language" onclick="langToggle()"></div>
+
+        <div lang="en" class="language_menu">
+          <a class="language" onclick="translateContent('ar')">
+            <img lang="en" class="flag" src="images\flags\Egyptian.png" alt="">
+            <p>عربي</p>
+          </a>
+          <a class="language" onclick="translateContent('en')">
+            <img lang="en" class="flag" src="images\flags\British.png" alt="">
+            <p>English</p>
+          </a>
+          <a class="language" onclick="translateContent('de')">
+            <img lang="en" class="flag" src="images\flags\German.png" alt="">
+            <p>Deutsch</p>
+          </a>
+        </div>
+
+        <div class="navItems_container">
+          <a href="#" onclick="hamburgerToggle()" lang="en" name="home">الرئيسية</a>
+          <a href="#about-us" onclick="hamburgerToggle()" lang="en" name="aboutUs">من نحن</a>
+          <a href="#our-services_section" onclick="hamburgerToggle()" lang="en" name="ourService">خدماتنا</a>
+          <a class="contact-us_btn" href="#contact-us" onclick="hamburgerToggle()" lang="en" name="contactUs">تواصل معنا</a>
+        </div>
       </div>
 
-      <a href="#" onclick="menuClick()">الرئيسية</a>
-      <a href="#about-us" onclick="menuClick()">من نحن</a>
-      <a href="#our-services_section" onclick="menuClick()">خدماتنا</a>
-      <a class="contact-us_btn" href="#contact-us" onclick="menuClick()">تواصل معنا</a>
+      <div lang="en" class="logo_container">
+        <img src="images\Logo.jpg" alt="">
+        <p lang="en" class="logo_text" name="logo">الدولية</p>
+      </div>
     </div>
 
-    <div class="logo_container">
-      <img src="images\Logo.jpg" alt="">
-      <p class="logo_text">الدولية</p>
+
+    <div class="header_div">
+      <div class="header_text">
+        <h1 lang="en" name="headingTitle" class="animate-top">الدولية للمحاماة والإستشارات القانونية</h1>
+      </div>
     </div>
+
+
+    <section id="about-us" class="light">
+      <div class="title_container">
+        <div class="horizontal_line"></div>
+        <div lang="en" class="vertical_line"></div>
+        <h1 lang="en" class="text" name="aboutUs">من نحن</h1>
+      </div>
+
+      <div class="text_container">
+        <p><span lang="en" name="personalBio">السيرة الذاتية:</span> <span lang="en" name="personalBioText">المحاميان بالإستئناف الأعلى ومجلس الدولة.</span></p>
+        <p><span lang="en" name="profBio">السيرة المهنية:</span> <span lang="en" name="profBioText">عضو إتحاد المحاميين العرب لدى المحاكم الجنائية والمدنية والعسكرية ومحاكم الأسرة.</span></p>
+      </div>
+
+      <div class="lawyers_container">
+        <div class="lawyer_subcontainer">
+          <img src="images\person1.jpg" alt="">
+          <p lang="en" name="hossamName">حسام فؤاد أحمد عبد الوهاب</p>
+        </div>
+        <div class="lawyer_subcontainer">
+          <img src="images\person2.jpg" alt="">
+          <p lang="en" name="aliName">على إبراهيم الجندي</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="our-services_section" class="dark">
+      <div class="title_container">
+        <div class="horizontal_line"></div>
+        <div class="vertical_line"></div>
+        <h1 class="text" lang="en" name="ourService">خدماتنا</h1>
+      </div>
+
+      <div class="services_cards"></div>
+    </section>
+
+    <section id="contact-us">
+
+      <div class="title_container">
+        <div class="horizontal_line"></div>
+        <div class="vertical_line"></div>
+        <h1 class="text" lang="en" name="contactUs">تواصل معنا</h1>
+      </div>
+
+      <div class="contact-us_container">
+        <div class="details_column">
+          <div class="contact">
+            <img lang="en" src="images\SVG\Icon zocial-email.svg" alt="">
+            <p>Hossam1983ale@gmail.com</p>
+          </div>
+          <div class="contact">
+            <img lang="en" src="images\SVG\Icon zocial-email.svg" alt="">
+            <p>Alindyly31@gmail.com</p>
+          </div>
+          <div class="contact">
+            <a href="https://api.whatsapp.com/send?phone=201004351757">
+              <img lang="en" src="images\SVG\Icon awesome-whatsapp.svg" alt=""></a>
+            <p>+2 010 0435 1757</p>
+          </div>
+          <div class="contact">
+            <a href="https://api.whatsapp.com/send?phone=201003921020">
+              <img lang="en" src="images\SVG\Icon awesome-whatsapp.svg" alt=""></a>
+            <p>+2 010 0392 1020</p>
+          </div>
+          <div class="contact">
+            <img lang="en" src="images\SVG\Icon awesome-facebook-f.svg" alt="">
+            <p>Hossam Fouad</p>
+          </div>
+        </div>
+
+        <div class="details_column">
+          <div class="contact">
+            <img lang="en" src="images\SVG\Icon material-location-on.svg" alt="">
+            <p ="translate" name="address">شارع الشيراتون, الغردقة البحر الأحمر, مصر </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright_container">
+        <p class="created-by">Create by <a href="https://miminah.github.io/MiminaWebsite/tech.html">Mimina</a></p>
+        <p class="copyright">© Al-Dawleya 2020.</p>
+      </div>
+    </section>
+
   </div>
-
-
-  <div class="header_div">
-    <div class="header_text">
-      <h1>الدولية للمحاماة والإستشارات القانونية</h1>
-    </div>
-  </div>
-
-
-  <section id="about-us" class="light">
-    <div class="title_container">
-      <div class="horizontal_line"></div>
-      <div class="vertical_line"></div>
-      <h1 class="text">من نحن</h1>
-    </div>
-
-    <div class="text_container">
-      <p><span>السيرة الذاتية:</span> المحاميان بالإستئناف الأعلى ومجلس الدولة.</p>
-      <p><span>السيرة المهنية:</span> عضو إتحاد المحاميين العرب لدى المحاكم الجنائية والمدنية والعسكرية ومحاكم الأسرة.</p>
-    </div>
-
-    <div class="lawyers_container">
-      <div class="lawyer_subcontainer">
-        <img src="images\person1.jpg" alt="">
-        <p>حسام فؤاد أحمد عبد الوهاب</p>
-      </div>
-      <div class="lawyer_subcontainer">
-        <img src="images\person2.jpg" alt="">
-        <p>على إبراهيم الجندي</p>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="our-services_section" class="dark">
-    <div class="title_container">
-      <div class="horizontal_line"></div>
-      <div class="vertical_line"></div>
-      <h1 class="text">خدماتنا</h1>
-    </div>
-
-    <div class="services_cards"></div>
-  </section>
-
-  <section id="contact-us">
-
-    <div class="title_container">
-      <div class="horizontal_line"></div>
-      <div class="vertical_line"></div>
-      <h1 class="text">تواصل معنا</h1>
-    </div>
-
-    <div class="contact-us_container">
-      <div class="details_column">
-        <div class="contact">
-          <img src="images\SVG\Icon zocial-email.svg" alt="">
-          <p>Hossam1983ale@gmail.com</p>
-        </div>
-        <div class="contact">
-          <img src="images\SVG\Icon zocial-email.svg" alt="">
-          <p>Alindyly31@gmail.com</p>
-        </div>
-        <div class="contact">
-          <a href="https://api.whatsapp.com/send?phone=201004351757">
-            <img src="images\SVG\Icon awesome-whatsapp.svg" alt=""></a>
-          <p>+2 010 0435 1757</p>
-        </div>
-        <div class="contact">
-          <a href="https://api.whatsapp.com/send?phone=201003921020">
-            <img src="images\SVG\Icon awesome-whatsapp.svg" alt=""></a>
-          <p>+2 010 0392 1020</p>
-        </div>
-        <div class="contact">
-          <img src="images\SVG\Icon awesome-facebook-f.svg" alt="">
-          <p>Hossam Fouad</p>
-        </div>
-      </div>
-
-      <div class="details_column">
-        <div class="contact">
-          <img src="images\SVG\Icon material-location-on.svg" alt="">
-          <p>شارع الشيراتون, الغردقة البحر الأحمر, مصر </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="copyright_container">
-      <p class="created-by">Create by <a href="https://miminah.github.io/MiminaWebsite/tech.html">Mimina</a></p>
-      <p class="copyright">© Al-Dawleya 2020.</p>
-    </div>
-  </section>
-
 </body>
 
 
 <footer>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="JS/index.js" charset="utf-8"></script>
 
+  <script src="JS/languages.js" charset="utf-8"></script>
+  <script src="JS/index.js" charset="utf-8"></script>
 </footer>
 
 </html>
