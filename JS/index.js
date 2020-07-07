@@ -11,28 +11,28 @@
 */
 
 // LOAD PAGE -------------------------------------
-  function showLoading(milliseconds) {
+function showLoading(milliseconds) {
 
-    if ($('#loader').css('display') == 'none'){
-      $('#loader').css('display', 'block');
-      $('#rootDiv').css('display', 'none');
-    }
-
-    setTimeout(function(){
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("rootDiv").style.display = "block";
-    }, milliseconds);
+  if ($('#loader').css('display') == 'none') {
+    $('#loader').css('display', 'block');
+    $('#rootDiv').css('display', 'none');
   }
 
+  setTimeout(function() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("rootDiv").style.display = "block";
+  }, milliseconds);
+}
+
 // SET-UP LANGUAGE -------------------------------------
-  var browserLang = (navigator.language || navigator.userLanguage).split('-')[0];
+var browserLang = (navigator.language || navigator.userLanguage).split('-')[0];
 
-  // check if browser language is either ar, en, or de. If not default to en.
-  var language = (browserLang.toString() == "ar") || (browserLang.toString() == "en") || (browserLang.toString() == "de") ? languages[browserLang.toString()] : languages["en"];
+// check if browser language is either ar, en, or de. If not default to en.
+var language = (browserLang.toString() == "ar") || (browserLang.toString() == "en") || (browserLang.toString() == "de") ? languages[browserLang.toString()] : languages["en"];
 
-  // EXECUTE ON FIRST LOAD ONLY
-  showLoading(2000);
-  translateContent(browserLang, true);
+// EXECUTE ON FIRST LOAD ONLY
+showLoading(2000);
+translateContent(browserLang, true);
 
 // NAVBAR -------------------------------------------
 /* SHOW/HIDE hamburger menu */
@@ -99,10 +99,10 @@ function translateContent(lang, firsLoad) {
   $(".services_cards").html(`${language.services.map(serviceTemplate).join("")}`);
   makeCardCollapsible();
 
-// change current flag image.
+  // change current flag image.
   $('.current_language').css('background-image', `url(${language.flagURL})`);
 
-// if a new language is chosen, show loading & close lang menu.
+  // if a new language is chosen, show loading & close lang menu.
   if (!firsLoad) {
     showLoading(1000);
     langToggle();
@@ -116,7 +116,9 @@ function serviceTemplate(service) {
   let p = "";
 
   service.details.forEach((detail) => {
-    p += `<p lang="translate" name="details">${detail}</p>`;
+    // p += `<p lang="translate" name="details">${detail}</p>`;
+    p += `${detail}`;
+
   });
 
   return `<div class="service_card_container collapsible">

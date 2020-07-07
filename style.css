@@ -315,6 +315,7 @@ a {
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
+  width: 55vw;
   font-size: 2vw;
   color: white;
 }
@@ -322,7 +323,11 @@ a {
 /************* ABOUT-US SECTION *************/
 #about-us .text_container p {
   font-size: 1.4rem;
-  margin-bottom: 30px;
+  margin: 0 10vw 30px 19vw;
+}
+
+#about-us .text_container p[lang="ar"] {
+  margin: 0 19vw 30px 10vw;
 }
 
 #about-us .text_container span:nth-child(1) {
@@ -403,14 +408,36 @@ a {
 .service_details {
   display: none;
   max-height: 0;
-  margin: 2% 5% 0 12%;
+  margin: 0 5% 0 12%;
   font-size: 1.1rem;
+  line-height: 1.9rem;
   color: #cccccc;
   transition: max-height 0.3s ease-out;
 }
 
 .service_details[lang="ar"] {
-  margin: 2% 12% 0 5%;
+  margin: 0 12% 0 5%;
+  font-size: 1.5rem;
+}
+
+.service_details p {
+  margin-top: 20px;
+}
+
+.service_details ul, .service_details ol {
+  margin: 10px 0 0 30px;
+}
+
+.service_details[lang="ar"] ul, .service_details[lang="ar"] ol {
+  margin: 10px 40px 0 0;
+}
+
+.service_details .custom_margin {
+  margin: 10px 0 0 25px;
+}
+
+.service_details[lang="ar"] .custom_margin {
+  margin: 0 25px 0 0;
 }
 
 /************* CONTACT-US SECTION *************/
@@ -463,6 +490,10 @@ a {
   font-family: 'PT Serif', serif;
 }
 
+iframe {
+  min-width: 250px;
+}
+
 /************* FOOTER *************/
 .copyright_container {
   display: flex;
@@ -475,7 +506,7 @@ a {
 
 .copyright_container .copyright {
   margin: 0 auto;
-  transform: translateX(-20px);
+  transform: translateX(-70%);
 }
 
 .copyright_container .created-by {
@@ -561,7 +592,8 @@ a {
   .navbar_container .navlinks_container .navItems_container a {
     margin: 5vh 0;
   }
-  .navbar_container .navlinks_container .navItems_container a[lang="ar"]{
+
+  .navbar_container .navlinks_container .navItems_container a[lang="ar"] {
     margin: 4vh 0;
   }
 
@@ -579,10 +611,10 @@ a {
   }
 
   .header_text h1 {
-    text-align: center;
-    width: 240px;
-    font-size: 1.9rem;
-    line-height: 2.6rem;
+    width: 75vw;
+    font-size: 6.5vw;
+    line-height: 3.5rem;
+    transform: translate(-7%, 10%);
   }
 
   /* ABOUT-US -------------------------------------------- */
