@@ -468,26 +468,29 @@ a {
 }
 
 .contact a {
+  display: flex;
+  align-items: center;
   height: 40px;
+}
+
+.contact a:hover {
+  opacity: 0.5;
 }
 
 .contact img {
   height: 25px;
   width: 25px;
-  margin: 0 25px 15px 0;
+  margin: auto 25px auto 0;
 }
 
 .contact img[lang="ar"] {
-  margin: 0 0 15px 25px;
-}
-
-.contact img:hover {
-  opacity: 0.5;
+  margin: auto 0 auto 25px;
 }
 
 .contact p {
   direction: ltr;
   font-family: 'PT Serif', serif;
+  margin: auto 0;
 }
 
 iframe {

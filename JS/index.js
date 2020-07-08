@@ -123,7 +123,7 @@ function serviceTemplate(service) {
 
   return `<div class="service_card_container collapsible">
     <div class="service_name_icon_row">
-    <img lang="${language.language}" class="service_icon" src="${service.icon}" alt="">
+    <img lang="${language.language}" class="service_icon" src="${service.icon}" alt="legal service">
     <h3 lang="translate" name="service">${service.service}</h3>
     </div>
     <div lang="${language.language}" class="service_details">
