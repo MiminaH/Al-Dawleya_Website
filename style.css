@@ -515,7 +515,7 @@ iframe {
 }
 
 .copyright_container .created-by {
-  margin-left: 10px;
+  transform: translateX(15%);
 }
 
 .created-by a {
@@ -658,16 +658,11 @@ iframe {
 
   /* CONTACT-US -------------------------------------------- */
   #contact-us .contact-us_container .details_column {
-    width: 95vw;
+    width: 98vw;
   }
 
   /* FOOTER -------------------------------------------- */
   .copyright_container .copyright {
     margin: 0;
-    transform: translateX(-10px);
-  }
-
-  .copyright_container .created-by {
-    margin-left: 5px;
   }
 }

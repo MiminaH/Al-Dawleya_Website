@@ -47,8 +47,8 @@ function langToggle() {
 
 
 // TRANSLATE content -------------------------------------------
-function translateContent(lang, firsLoad) {
-  window.location.href = `index-${lang}.html`;
+function translateContent(lang) {
+  window.location.href = `-${lang}.html`;
 }
 
 
