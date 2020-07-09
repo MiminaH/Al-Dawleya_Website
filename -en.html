@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+  <meta name="keywords" content="lawyer, lawyers, hurghada, egypt, visa, foreigner, foreigners, solicitor, solicitors, attorney, attorneys, legal, company, marriage, contract, real estate, official, government, ownership, ">
+
+
+  <meta name="description" content="Lawyers based in Hurghada and we offer a wide range of legal services such as: company establishment, contract drafting and registration, finalizing official marriage procedures... etc">
+
+  <title lang="en" name="title">Lawyers Hurghada</title>
+
+  <link rel='shortcut icon' href='images\favicon.jpg' type='image/x-icon' />
+</head>
+
+<body onload="showLoading(2000)">
+
+  <div id="loader"></div>
+
+  <div style="display:none;" id="rootDiv">
+
+    <div class="navbar_container">
+      <a class="hamburger_icon" onclick="hamburgerToggle()">
+        <i lang="en" class="fas fa-bars fa-2x"></i>
+      </a>
+
+      <div class="navlinks_container">
+
+        <div lang="en" class="current_language">
+          <a onclick="langToggle()">
+            <img lang="en" class="flag" src="images\flags\British.png" alt="">
+          </a>
+        </div>
+
+        <div lang="en" class="language_menu">
+          <a class="language" onclick="translateContent('ar')">
+            <img lang="en" class="flag" src="images\flags\Egyptian.png" alt="">
+            <p>عربي</p>
+          </a>
+          <a class="language" onclick="translateContent('en')">
+            <img lang="en" class="flag" src="images\flags\British.png" alt="">
+            <p>English</p>
+          </a>
+          <a class="language" onclick="translateContent('de')">
+            <img lang="en" class="flag" src="images\flags\German.png" alt="">
+            <p>Deutsch</p>
+          </a>
+        </div>
+
+        <div class="navItems_container">
+          <a href="#" onclick="hamburgerToggle()" lang="en" name="home">Home</a>
+          <a href="#about-us" onclick="hamburgerToggle()" lang="en" name="aboutUs">About us</a>
+          <a href="#our-services_section" onclick="hamburgerToggle()" lang="en" name="ourService">Our Services</a>
+          <a class="contact-us_btn" href="#contact-us" onclick="hamburgerToggle()" lang="en" name="contactUs">Contact us</a>
+        </div>
+      </div>
+
+      <div lang="en" class="logo_container">
+        <img src="images\Logo.jpg" alt="">
+        <p lang="en" class="logo_text" name="logo">Al-Dawleya</p>
+      </div>
+    </div>
+
+
+    <div class="header_div">
+      <div class="header_text">
+        <h1 lang="en" name="headingTitle" class="animate-top">Al-Dawleya Law and Legal Consultations Firm in Hurghada</h1>
+      </div>
+    </div>
+
+
+    <section id="about-us" class="light">
+      <div class="title_container">
+        <div class="horizontal_line"></div>
+        <div lang="en" class="vertical_line"></div>
+        <h1 lang="en" class="text" name="aboutUs">About us</h1>
+      </div>
+
+      <div class="text_container">
+        <p><span lang="en" name="personalBio">Personal Biography: </span> <span lang="en" name="personalBioText">Two attorneys at the high appeal and the state council.</span></p>
+        <p><span lang="en" name="profBio">Professional Biography: </span> <span lang="en" name="profBioText">Member of the Union of Arab Lawyers at the criminal, civil, military, and family courts.</span></p>
+      </div>
+
+      <div class="lawyers_container">
+        <div class="lawyer_subcontainer">
+          <img src="images\HossamPic.jpg" alt="Hurghada Lawyer - Hossam">
+          <p lang="en" name="hossamName">Hossam Fouad Ahmed Abdel-Wahab</p>
+        </div>
+        <div class="lawyer_subcontainer">
+          <img src="images\AliPic.jpg" alt="Hurghada Lawyer - Ali">
+          <p lang="en" name="aliName">Ali Ibrahim Ibrahim Al-Gindi</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="our-services_section" class="dark">
+      <div class="title_container">
+        <div class="horizontal_line"></div>
+        <div class="vertical_line"></div>
+        <h1 class="text" lang="en" name="ourService">Our Services</h1>
+      </div>
+
+      <div class="services_cards">
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="en" class="service_icon" src="images\\icons\\rental-house-contract icon.png" alt="legal service">
+            <h3 lang="en" name="service">Register sales contracts and finalize all legal & official procedures.</h3>
+          </div>
+          <div lang="en" class="service_details">
+            <p>Ownership of real estate and land by foreigners in Egypt:</p>
+            <p>Foreigners are allowed to own a maximum of two properties in Egypt, strictly to be only used as a private residence for themselves and their family. Otherwise, it is not allowed to utilize owned properties towards any private activity
+              licensed by the competent Egyptian authorities.</p>
+            <p>The Egyptian law no. 320 of the year 1996 regulates the ownership of lands and real estate by foreigners for ordinary natural and legal people.</p>
+            <p>Article no. 2 of Law no. 320 of the year 1996 clarifies all the terms of ownership as follows:</p>
+            <ol>
+              <li>Ownership of only a maximum of two properties in Egypt to be used as a private residence for him and his family without disposing the right to own a property to carry out any private activity licensed by the competent Egyptian
+                authorities.</li>
+              <li>The area of each property must not exceed four thousand square meters.</li>
+              <li>The property may not be considered an antique by the Antiquities Protection Law.</li>
+            </ol>
+            <p>Article no. 3: of diplomatic and consular headquarters in Egypt.</p>
+            <p>Article no. 4: Foreigners who own land under this law must start construction within a period that does not exceed the five years since the contract was registered. If this period passed without starting construction work, then the
+              duration of the prohibition increases equally to the period of construction delay, as shown in the following article:</p>
+            <p class="custom_margin">Article no. 5: A foreigner who owns real estate in accordance with this law is not permitted to sell or take any legal action with it before the lapse of five years from the date of acquisition of the property.
+            </p>
+            <p>The Head of the Council of Ministers may, in the cases he leads, grant permission to sell the property before this period has elapsed.</p>
+          </div>
+        </div>
+
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="en" class="service_icon" src="images\\icons\\agreement icon.png" alt="legal service">
+            <h3 lang="en" name="service">Drafting all kinds of contracts.</h3>
+          </div>
+          <div lang="en" class="service_details">
+            <p>The contract concluded on the advice of a professional lawyer ensures your safety in the future, as the lawyer will give you all the information you need and verify all documents, which will be signed and sealed by his office.</p>
+            <p>(Sale - purchase - real estate, cars and commercial contracts)</p>
+          </div>
+        </div>
+
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="en" class="service_icon" src="images\\icons\\travel-visa icon.png" alt="legal service">
+            <h3 lang="en" name="service">Obtaining all types of visas for foreigners.</h3>
+          </div>
+          <div lang="en" class="service_details">
+            <p>Foreigners may be granted temporary residence other than tourism for a period of five years, renewable for those who own one or more properties with a minimum of 400,000 dollars.</p>
+            <p>Foreigners may be granted temporary residence other than tourism for a period of three years renewable for those who own real estate at least 200,000 dollars.</p>
+            <p>We can also arrange to extend tourist visas from 30 to 90 days.</p>
+          </div>
+        </div>
+
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="en" class="service_icon" src="images\\icons\\wedding icon.png" alt="legal service">
+            <h3 lang="en" name="service">Finalize procedures for marrying foreigners in Egypt, drafting customary marital contracts, as well as legalizing and enforcing them.</h3>
+          </div>
+          <div lang="en" class="service_details">
+            <p>Documents required to complete the marriage contract:</p>
+            <p>For the wife:</p>
+            <ul>
+              <li>a passport valid for a period no less than six months</li>
+              <li>a valid residence</li>
+              <li>a health certificate from any government hospital</li>
+              <li>8 personal photos</li>
+              <li>a no-objection certificate from the embassy of the country to which the wife is affiliated with a statement of marital status and religion.</li>
+            </ul>
+            <p>For the husband:</p>
+            <ul>
+              <li>original ID and a photocopy thereof</li>
+              <li>a health certificate from any government hospital</li>
+              <li>a registration statement of marital status.</li>
+            </ul>
+            <p>Conditions for a foreigner, who’s married to an Egyptian, to obtain Egyptian citizenship:</p>
+            <p class="custom_margin">The foreign wife acquires the Egyptian nationality after two years from the marital relationship, provided that the marital relationship does not end when applying for citizenship.</p>
+            <p>Required documents:</p>
+            <ul>
+              <li>marriage contract</li>
+              <li>husband’s birth certificate</li>
+              <li>his father’s birth certificate</li>
+              <li>4 recent photographs of the husband and wife</li>
+              <li>a copy of the wife’s passport</li>
+              <li>a family registration of the husband.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="en" class="service_icon" src="images\\icons\\new-company icon.png" alt="legal service">
+            <h3 lang="en" name="service">Establishment of all kind of companies.</h3>
+          </div>
+          <div lang="en" class="service_details">
+            <p>One of the most important services that we provide is the service of establishing new companies and doing legal services for these companies ranging from the establishment procedures and all legal related issues of the company, to its legal agency. For that we offer legal assistance for Egyptians and foreigners and commercial entities to establish their activity legally and help them choose the legal form for their companies that correspond to their activities in accordance with the Egyptian law.</p>
+            <p>We have long-term experience in establishing companies in the fastest time and with the highest accuracy and efficiency.</p>
+            <p>In addition to that we also provide services to open branches of foreign companies in Egypt, a service closely related to the establishment of companies.</p>
+          </div>
+        </div>
+
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="en" class="service_icon" src="images\\icons\\divorce-rings icon.png" alt="legal service">
+            <h3 lang="en" name="service">Find all kinds of solutions to end the marriage to foreigners in Egypt and obtain final legal divorce papers.</h3>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contact-us">
+
+      <div class="title_container">
+        <div class="horizontal_line"></div>
+        <div class="vertical_line"></div>
+        <h1 class="text" lang="en" name="contactUs">Contact us</h1>
+      </div>
+
+      <div class="contact-us_container">
+        <div class="details_column">
+          <div class="contact">
+            <a href="mailto:hossam1983ale@gmail.com">
+              <img lang="en" src="images\SVG\Icon zocial-email.svg" alt="">
+              <p>Hossam1983ale@gmail.com</p>
+            </a>
+          </div>
+          <div class="contact">
+            <a href="mailto:aljndyly31@gmail.com">
+              <img lang="en" src="images\SVG\Icon zocial-email.svg" alt="">
+              <p>Aljndyly31@gmail.com</p>
+            </a>
+          </div>
+          <div class="contact">
+            <a href="https://api.whatsapp.com/send?phone=201004351757">
+              <img lang="en" src="images\SVG\Icon awesome-whatsapp.svg" alt="">
+              <p>+2 010 0435 1757</p>
+            </a>
+          </div>
+          <div class="contact">
+            <a href="https://api.whatsapp.com/send?phone=201003921020">
+              <img lang="en" src="images\SVG\Icon awesome-whatsapp.svg" alt="">
+              <p>+2 010 0392 1020</p>
+            </a>
+          </div>
+          <div class="contact">
+            <a href="https://www.facebook.com/hossam.fouad.39">
+              <img lang="en" src="images\SVG\Icon awesome-facebook-f.svg" alt="">
+              <p>Hossam Fouad</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="details_column">
+          <div class="contact">
+            <a href="https://goo.gl/maps/GrNfWX9KUxb6NnP56">
+              <img lang="en" src="images\SVG\Icon material-location-on.svg" alt="">
+              <p="translate" name="address">Sheraton Street, Hurghada Red Sea, Egypt.</p>
+            </a>
+          </div>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d886.9959993019417!2d33.837169903616!3d27.219652220189758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc856a520a580c93d!2sMcDonald&#39;s!5e0!3m2!1sen!2seg!4v1594135859574!5m2!1sen!2seg"
+            class="contact" style="margin-top: 10px;" width="80%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+
+      <div class="copyright_container">
+        <p class="created-by">Create by <a href="https://miminah.github.io/MiminaWebsite/tech.html">Mimina</a></p>
+        <p class="copyright">© Al-Dawleya 2020.</p>
+      </div>
+    </section>
+
+  </div>
+</body>
+
+
+<footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <script src="JS/languages.js" charset="utf-8"></script>
+  <script src="index.js" charset="utf-8"></script>
+</footer>
+
+</html>

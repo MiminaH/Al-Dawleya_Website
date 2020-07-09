@@ -193,7 +193,6 @@ a {
   display: inline-block;
   width: 25px;
   height: 25px;
-  /* background-image: url("images\\flags\\Egyptian.png"); */
   background-size: cover;
   background-position: center;
   margin: 0 8vw 0 20px;
@@ -403,6 +402,7 @@ a {
 
 .service_card_container h3 {
   font-size: 1.3rem;
+  line-height: 2.3rem;
 }
 
 .service_details {
@@ -465,6 +465,7 @@ a {
 #contact-us .contact-us_container .details_column .contact {
   display: flex;
   margin: 0 8vw;
+  font-size: 1.2rem;
 }
 
 .contact a {
@@ -505,6 +506,7 @@ iframe {
   width: 100vw;
   font-size: 0.8rem;
   color: #bbbbbb;
+  margin: 5px 0;
 }
 
 .copyright_container .copyright {

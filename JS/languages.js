@@ -4,7 +4,7 @@ const languages = {
   ar: {
     language: "ar",
     flagURL: "images/flags/Egyptian.png",
-    title: "الدولية للمحاماة",
+    title: "الدولية للمحاماة بالغردقة",
     logo: "الدولية",
     home: "الرئيسية",
     aboutUs: "من نحن",

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+  <meta name="keywords" content="lawyer, lawyers, hurghada, egypt, visa, foreigner, foreigners, solicitor, solicitors, attorney, attorneys, legal, company, marriage, contract, real estate, official, government, ownership, ">
+
+
+  <meta name="description" content="Anwälte in Hurghada und wir bieten eine breite Palette von juristischen Dienstleistungen an, wie z. B.: Unternehmensgründung, Vertragsgestaltung und -registrierung, Abschluss der offiziellen Eheverfahren ... usw.">
+
+  <title lang="de" name="title">Hurghada Anwälte</title>
+
+  <link rel='shortcut icon' href='images\favicon.jpg' type='image/x-icon' />
+</head>
+
+<body onload="showLoading(2000)">
+
+  <div id="loader"></div>
+
+  <div style="display:none;" id="rootDiv">
+
+    <div class="navbar_container">
+      <a class="hamburger_icon" onclick="hamburgerToggle()">
+        <i lang="de" class="fas fa-bars fa-2x"></i>
+      </a>
+
+      <div class="navlinks_container">
+
+        <div lang="en" class="current_language">
+          <a onclick="langToggle()">
+            <img lang="en" class="flag" src="images\flags\German.png" alt="">
+          </a>
+        </div>
+
+        <div lang="de" class="language_menu">
+          <a class="language" onclick="translateContent('ar')">
+            <img lang="de" class="flag" src="images\flags\Egyptian.png" alt="">
+            <p>عربي</p>
+          </a>
+          <a class="language" onclick="translateContent('en')">
+            <img lang="de" class="flag" src="images\flags\British.png" alt="">
+            <p>English</p>
+          </a>
+          <a class="language" onclick="translateContent('de')">
+            <img lang="de" class="flag" src="images\flags\German.png" alt="">
+            <p>Deutsch</p>
+          </a>
+        </div>
+
+        <div class="navItems_container">
+          <a href="#" onclick="hamburgerToggle()" lang="de" name="home">Home</a>
+          <a href="#about-us" onclick="hamburgerToggle()" lang="de" name="aboutUs">Über uns</a>
+          <a href="#our-services_section" onclick="hamburgerToggle()" lang="de" name="ourService">Unsere Dienstleistungen</a>
+          <a class="contact-us_btn" href="#contact-us" onclick="hamburgerToggle()" lang="de" name="contactUs">Kontakt</a>
+        </div>
+      </div>
+
+      <div lang="de" class="logo_container">
+        <img src="images\Logo.jpg" alt="">
+        <p lang="de" class="logo_text" name="logo">Al-Dawleya</p>
+      </div>
+    </div>
+
+
+    <div class="header_div">
+      <div class="header_text">
+        <h1 lang="de" name="headingTitle" class="animate-top">Al-Dawleya Rechtsberatung in Hurghada</h1>
+      </div>
+    </div>
+
+
+    <section id="about-us" class="light">
+      <div class="title_container">
+        <div class="horizontal_line"></div>
+        <div lang="de" class="vertical_line"></div>
+        <h1 lang="de" class="text" name="aboutUs">Über uns</h1>
+      </div>
+
+      <div class="text_container">
+        <p><span lang="de" name="personalBio">Biographie: </span> <span lang="de" name="personalBioText">Zwei Rechtsanwälte am Obersten Berufungsgericht und am Staatsrat.</span></p>
+        <p><span lang="de" name="profBio">Berufliche Biographie: </span> <span lang="de" name="profBioText">Mitglied(er) der Vereinigung der Arabischen Rechtsanwälte am Straf-, Zivil-, Militär- und Familiengericht.</span></p>
+      </div>
+
+      <div class="lawyers_container">
+        <div class="lawyer_subcontainer">
+          <img src="images\HossamPic.jpg" alt="Hurghada Lawyer - Hossam">
+          <p lang="de" name="hossamName">Hossam Fouad Ahmed Abdel-Wahab</p>
+        </div>
+        <div class="lawyer_subcontainer">
+          <img src="images\AliPic.jpg" alt="Hurghada Lawyer - Ali">
+          <p lang="de" name="aliName">Ali Ibrahim Ibrahim Al-Gindi</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="our-services_section" class="dark">
+      <div class="title_container">
+        <div class="horizontal_line"></div>
+        <div class="vertical_line"></div>
+        <h1 class="text" lang="de" name="ourService">Unsere Dienstleistungen</h1>
+      </div>
+
+      <div class="services_cards">
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="de" class="service_icon" src="images\\icons\\rental-house-contract icon.png" alt="legal service">
+            <h3 lang="de" name="service">Registrierung von Kaufverträgen und Abschluss aller rechtlichen und amtlichen Verfahren.</h3>
+          </div>
+          <div lang="de" class="service_details">
+            <p>Eigentum von Immobilien und Grundstück von Ausländer in Ägypten:</p>
+            <p class="custom_margin">Ausländern ist es gestattet maximal zwei Immobilien in Ägypten zu besitzen, welche nur als privaten Wohnsitz für sich und seine Familie genutzt werden darf.</p>
+            <p>Es nicht gestattet, Immobilien für illegale private Aktivitäten zu nutzen.</p>
+            <p>Das ägyptische Gesetz Nr. 320 von 1996 regelt das Eigentum von Grundstück und Immobilien von Ausländern für natürliche und juristische Personen.</p>
+            <p>Artikel 2 vom Gesetz Nr. 320 von 1996 definiert den Begriff Eigentum wie folgt:</p>
+            <ol>
+              <li>Das Eigentum von maximal zwei Immobilien ist in Ägypten gestattet, welche als privaten Wohnsitz für sich und die Familie genutzt wird. Jedoch verfügt man nicht über das Recht, diese Immobilien für illegale private Aktivitäten zu
+                nutzen.</li>
+              <li>Die Fläche jedes Eigentums darf 4000 Quadratmeter nicht überschreiten.</li>
+              <li>Das Eigentum muss vom Antiquitäten-Schutz-Gesetz als nicht antik betrachtet werden. Art. Nr. 3: betreffen diplomatische und konsularische Hauptsitze in Ägypten. Art. Nr. 4: Ausländer, die unter dem diesem Gesetz Land besitzen,
+                müssen mit dem Bau innerhalb von fünf Jahren beginnen, nachdem der Vertrag registriert wurde. Falls der Zeitraum abgelaufen ist, ohne mit dem Bau begonnen zu haben, erhöht sich die Dauer des Verbots gleichermaßen wie der Bauverzug,
+                wie im folgenden Artikel ersichtlich ist.</li>
+            </ol>
+            <p>Artikel Nr. 5: Einem Ausländer, welcher Immobilien gemäß diesem Gesetz besitzt, ist es nicht gestattet, diese zu verkaufen oder rechtliche Schritte einzuleiten vor Ablauf der Jahresfrist von fünf Jahren, welche mit dem Kauf des
+              Eigentums beginnt.</p>
+            <p>Das Oberhaupt der Ministerräte darf, innerhalb seiner Kompetenzen, den Verkauf dieses Eigentums vor Ablauf der Jahresfrist von fünf Jahren gewähren.</p>
+          </div>
+        </div>
+
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="de" class="service_icon" src="images\\icons\\agreement icon.png" alt="legal service">
+            <h3 lang="de" name="service">Erstellung von Verträgen jeglicher Art.</h3>
+          </div>
+          <div lang="de" class="service_details">
+            <p>Der Vertrag, abgeschlossen mit dem Rat eines professionellen Anwaltes, garantiert Ihnen in der Zukunft Sicherheit, da der Anwalt Ihnen alle benötigten Informationen zur Verfügung stellt und die Dokumente überprüft, welche in seinem
+              Büro unterschrieben und besiegelt werden.</p>
+            <p>(Verkauf – Kauf – Immobilien, Autos und Handelsverträge)</p>
+          </div>
+        </div>
+
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="de" class="service_icon" src="images\\icons\\travel-visa icon.png" alt="legal service">
+            <h3 lang="de" name="service">Erhalt von allen Visas für Ausländer.</h3>
+          </div>
+          <div lang="de" class="service_details">
+            <p>Ausländern können befristete Aufenthaltserlaubnisse (andere als Tourismus) bewilligt werden, für eine Zeitdauer von fünf Jahren für jene, die eine oder mehrere Besitztümer mit einem Wert von mindestens 400´000 Dollar haben. Ausländern
+              können befristete Aufenthaltserlaubnisse bewilligt werden (andere als Tourismus) für eine Zeitdauer von 3 Jahren für jene, die Immobilien mit einem Wert von mindestens 200.000 Dollar besitzen.</p>
+            <p>Auch ist es uns möglich, die Touristenvisas von 30 bis 90 Tagen zu verlängern.</p>
+          </div>
+        </div>
+
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="de" class="service_icon" src="images\\icons\\wedding icon.png" alt="legal service">
+            <h3 lang="de" name="service">Abschluss von Heiratsverfahren für Ausländer in Ägypten, Erstellung, Legalisierung und rechtliche Anerkennung von üblichen Eheverträgen.</h3>
+          </div>
+          <div lang="de" class="service_details">
+            <p>Erforderliche Dokumente, um den Ehevertrag zu vervollständigen:</p>
+            <p>Für die Ehefrau:</p>
+            <ul>
+              <li>Reisepass, welcher noch mindestens 6 Monate gültig ist</li>
+              <li>eine gültigen Wohnsitzbestätigung</li>
+              <li>ein Gesundheitszeugnis von einem Regierungsspital</li>
+              <li>8 persönliche Fotos</li>
+              <li>ein offizielles Dokument von der Botschaft vom Land der Ehefrau mit einer Erklärung des Familienstands und der Religion.</li>
+            </ul>
+            <p>Für den Ehemann:</p>
+            <ul>
+              <li>Originale ID und einer Fotokopie davon</li>
+              <li>Gesundheitszeugnis von einem Regierungsspital</li>
+              <li>ein offizielles Dokument des Familienstands</li>
+            </ul>
+            <p>Die Bedingungen für einen Ausländer, der mit einem Ägypter verheiratet ist, um die ägyptische Staatsbürgerschaft zu erhalten, sind wie folgt:</p>
+            <p class="custom_margin">Die ausländische Frau erhält die ägyptische Nationalität zwei Jahren nach der Eheschließung. Das setzt voraus, dass die Ehe bei der Beantragung der Staatsbürgerschaft nicht endet.</p>
+            <p>Erforderliche Dokumente:</p>
+            <ul>
+              <li>Heiratsvertrag</li>
+              <li>Geburtsbescheinigung des Ehemanns und seines Vaters</li>
+              <li>vier aktuelle Fotos vom Ehemann und der Ehefrau</li>
+              <li>Kopie des Passes der Ehefrau</li>
+              <li>offizielles Dokument des Familienregisters</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="de" class="service_icon" src="images\\icons\\new-company icon.png" alt="legal service">
+            <h3 lang="de" name="service">Gründung von Unternehmungen aller Art</h3>
+          </div>
+          <div lang="de" class="service_details">
+            <p>Eine der wichtigsten Dienstleistung, die wir anbieten ist die Dienstleistung für eine Firmengründung sowie für Rechtsdienste - vom Gründungsverfahren mit all den dazugehörigen Angelegenheiten bis hin zur juristischen Vertretung.
+              Deswegen offerieren wir juristische Unterstützung für Ägyptische Staatsbürger, Ausländer sowie Unternehmungen, um rechtlich aktiv zu werden. Zusätzlich helfen wir die geeignete Rechtsform für Ihre Tätigkeit, entsprechend dem ägyptischen
+              Gesetz, zu wählen.</p>
+            <p>Wir verfügen über langjährige Erfahrungen im Bereich der Firmengründung. Darin zeichnen wir uns durch Schnelligkeit, Genauigkeit sowie Effizienz aus.</p>
+            <p>Zusätzlich bieten wir Dienstleistungen rund um Niederlassungen (Filialen) von ausländischen Unternehmungen in Ägypten an – eine Dienstleistung die eng verbunden mit der Firmengründung ist.</p>
+          </div>
+        </div>
+
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="de" class="service_icon" src="images\\icons\\divorce-rings icon.png" alt="legal service">
+            <h3 lang="de" name="service">Hier finden Sie alle möglichen Arten von Lösungen, um eine Heirat mit Ausländer in Ägypten aufzulösen und erhalten Sie alle rechtlichen Scheidungspapiere.</h3>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contact-us">
+
+      <div class="title_container">
+        <div class="horizontal_line"></div>
+        <div class="vertical_line"></div>
+        <h1 class="text" lang="de" name="contactUs">Kontakt</h1>
+      </div>
+
+      <div class="contact-us_container">
+        <div class="details_column">
+          <div class="contact">
+            <a href="mailto:hossam1983ale@gmail.com">
+              <img lang="de" src="images\SVG\Icon zocial-email.svg" alt="">
+              <p>Hossam1983ale@gmail.com</p>
+            </a>
+          </div>
+          <div class="contact">
+            <a href="mailto:aljndyly31@gmail.com">
+              <img lang="de" src="images\SVG\Icon zocial-email.svg" alt="">
+              <p>Aljndyly31@gmail.com</p>
+            </a>
+          </div>
+          <div class="contact">
+            <a href="https://api.whatsapp.com/send?phone=201004351757">
+              <img lang="de" src="images\SVG\Icon awesome-whatsapp.svg" alt="">
+              <p>+2 010 0435 1757</p>
+            </a>
+          </div>
+          <div class="contact">
+            <a href="https://api.whatsapp.com/send?phone=201003921020">
+              <img lang="de" src="images\SVG\Icon awesome-whatsapp.svg" alt="">
+              <p>+2 010 0392 1020</p>
+            </a>
+          </div>
+          <div class="contact">
+            <a href="https://www.facebook.com/hossam.fouad.39">
+              <img lang="de" src="images\SVG\Icon awesome-facebook-f.svg" alt="">
+              <p>Hossam Fouad</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="details_column">
+          <div class="contact">
+            <a href="https://goo.gl/maps/GrNfWX9KUxb6NnP56">
+              <img lang="de" src="images\SVG\Icon material-location-on.svg" alt="">
+              <p="translate" name="address">Sheraton Street, Hurghada Red Sea, Egypt.</p>
+            </a>
+          </div>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d886.9959993019417!2d33.837169903616!3d27.219652220189758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc856a520a580c93d!2sMcDonald&#39;s!5e0!3m2!1sen!2seg!4v1594135859574!5m2!1sen!2seg"
+            class="contact" style="margin-top: 10px;" width="80%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+
+      <div class="copyright_container">
+        <p class="created-by">Create by <a href="https://miminah.github.io/MiminaWebsite/tech.html">Mimina</a></p>
+        <p class="copyright">© Al-Dawleya 2020.</p>
+      </div>
+    </section>
+
+  </div>
+</body>
+
+
+<footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <script src="JS/languages.js" charset="utf-8"></script>
+  <script src="index.js" charset="utf-8"></script>
+</footer>
+
+</html>

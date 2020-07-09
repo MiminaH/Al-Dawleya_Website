@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+  <meta name="keywords" content="lawyer, lawyers, hurghada, egypt, visa, foreigner, foreigners, solicitor, solicitors, attorney, attorneys, legal, company, marriage, contract, real estate, official, government, ownership, ">
+
+
+  <meta name="description" content="محامون في الغردقة ونقدم مجموعة واسعة من الخدمات القانونية مثل: تأسيس الشركة، صياغة العقود وتسجيلها، إنهاء إجراءات الزواج الرسمية ... الخ">
+
+  <title lang="ar" name="title">الدولية للمحاماة بالغردقة</title>
+
+  <link rel='shortcut icon' href='images\favicon.jpg' type='image/x-icon' />
+</head>
+
+<body onload="showLoading(2000)" class="arabic">
+
+  <div id="loader"></div>
+
+  <div style="display:none;" id="rootDiv">
+
+    <div class="navbar_container">
+      <a class="hamburger_icon" onclick="hamburgerToggle()">
+        <i lang="ar" class="fas fa-bars fa-2x"></i>
+      </a>
+
+      <div class="navlinks_container">
+
+        <div lang="ar" class="current_language">
+          <a onclick="langToggle()">
+            <img lang="ar" class="flag" src="images\flags\Egyptian.png" alt="">
+          </a>
+        </div>
+
+        <div lang="ar" class="language_menu">
+          <a class="language" onclick="translateContent('ar')">
+            <img lang="ar" class="flag" src="images\flags\Egyptian.png" alt="">
+            <p>عربي</p>
+          </a>
+          <a class="language" onclick="translateContent('en')">
+            <img lang="ar" class="flag" src="images\flags\British.png" alt="">
+            <p>English</p>
+          </a>
+          <a class="language" onclick="translateContent('de')">
+            <img lang="ar" class="flag" src="images\flags\German.png" alt="">
+            <p>Deutsch</p>
+          </a>
+        </div>
+
+        <div class="navItems_container">
+          <a href="#" onclick="hamburgerToggle()" lang="ar" name="home">الرئيسية</a>
+          <a href="#about-us" onclick="hamburgerToggle()" lang="ar" name="aboutUs">من نحن</a>
+          <a href="#our-services_section" onclick="hamburgerToggle()" lang="ar" name="ourService">خدماتنا</a>
+          <a class="contact-us_btn" href="#contact-us" onclick="hamburgerToggle()" lang="ar" name="contactUs">تواصل معنا</a>
+        </div>
+      </div>
+
+      <div lang="ar" class="logo_container">
+        <img src="images\Logo.jpg" alt="">
+        <p lang="ar" class="logo_text" name="logo">الدولية</p>
+      </div>
+    </div>
+
+
+    <div class="header_div">
+      <div class="header_text">
+        <h1 lang="ar" name="headingTitle" class="animate-top">الدولية للمحاماة والإستشارات القانونية</h1>
+      </div>
+    </div>
+
+
+    <section id="about-us" class="light">
+      <div class="title_container">
+        <div class="horizontal_line"></div>
+        <div lang="ar" class="vertical_line"></div>
+        <h1 lang="ar" class="text" name="aboutUs">من نحن</h1>
+      </div>
+
+      <div class="text_container">
+        <p><span lang="ar" name="personalBio">السيرة الذاتية: </span> <span lang="ar" name="personalBioText">المحاميان بالإستئناف العالي ومجلس الدولة.</span></p>
+        <p><span lang="ar" name="profBio">السيرة المهنية: </span> <span lang="ar" name="profBioText">عضو إتحاد المحاميين العرب لدى المحاكم الجنائية والمدنية والعسكرية ومحاكم الأسرة.</span></p>
+      </div>
+
+      <div class="lawyers_container">
+        <div class="lawyer_subcontainer">
+          <img src="images\HossamPic.jpg" alt="Hurghada Lawyer - Hossam">
+          <p lang="ar" name="hossamName">حسام فؤاد أحمد عبد الوهاب</p>
+        </div>
+        <div class="lawyer_subcontainer">
+          <img src="images\AliPic.jpg" alt="Hurghada Lawyer - Ali">
+          <p lang="ar" name="aliName">على إبراهيم إبراهيم الجندي</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="our-services_section" class="dark">
+      <div class="title_container">
+        <div class="horizontal_line"></div>
+        <div class="vertical_line"></div>
+        <h1 class="text" lang="ar" name="ourService">خدماتنا</h1>
+      </div>
+
+      <div class="services_cards">
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="ar" class="service_icon" src="images\\icons\\rental-house-contract icon.png" alt="legal service">
+            <h3 lang="ar" name="service">إنهاء إجراءات تسجيل عقود البيع الإبتدائية بالشهر العقاري وإستخراج العقد النهائي.</h3>
+          </div>
+          <div lang="ar" class="service_details">
+            <p>ملكية العقارات والأراضى للأجانب فى مصر :</p>
+            <p class="custom_margin">الملكية فقط لعقارين كحد أقصى فى مصر لأستخدمها كسكن خاص له ولأسرته دون تصرف في الحق فى امتلاك عقار لممارسة نشاط خاص مرخص من قبيل السلطات المصرية المختصة.</p>
+            <p>نظم القانون المصري رقم 320 لسنة 1996 ملكية الأجانب للأراضى والعقارات للأشخاص الطبيعيين والأشخاص الاعتباريين المادة رقم 2 من القانون رقم 320 لسنة 1996 توضح جميع شروط التملك كما يلى :</p>
+            <p class="custom_margin">١) الملكية فقط لعقارين كحد أقصى فى مصر لإستخدمها كسكن خاص له ولأسرته دون تصرف فى الحق فى امتلاك عقار لممارسة نشاط خاص مرخص من قبيل السلطات المصرية المختصة.</p>
+            <p class="custom_margin">٢) أن لا تزيد مساحة كل عقار عن أربعة ألاف متر.</p>
+            <p class="custom_margin">٣) لا يجوز اعتبار العقار من العقارات الأثرية فى قانون حماية الآثار.</p>
+            <p>المادة رقم 3 للمقرات الدبلوماسية والقنصلية فى مصر.</p>
+            <p>المادة رقم 4 على الأجانب الذين يملكون أراضي بموجب هذا القانون البدء فى البناء فى مدة لا تتجاوز الخمس سنوات التالية من تسجيل العقد إذا كانت هذه الفترة دون البدء فى أعمال البناء فتزداد مدة الحظر بالتساوى الى فترة التأخير فى البناء كما هو
+              موضح فى المقالة التالية.</p>
+            <p>المادة رقم 5 لا يجوز للأجنبي الذي يمتلك عقارات بموجب هذا القانون التصرف فيها بأي تصرف قانونى قبل أنقضاء خمس سنوات من تاريخ اكتساب الملكية.</p>
+            <p>يجوز لرئيس مجلس الوزراء فى الأحوال التى يقودها منح الإذن بالتصرف فى الممتلكات قبل أنقضاء هذه المدة.</p>
+          </div>
+        </div>
+
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="ar" class="service_icon" src="images\\icons\\agreement icon.png" alt="legal service">
+            <h3 lang="ar" name="service">صياغة جميع العقود بأنواعها.</h3>
+          </div>
+          <div lang="ar" class="service_details">
+            <p>العقد المبرم بناء على نصيحة محام محترف هو ضمان سلامتك للمستقبل حيث سيتحقق المحامى من جميع المستندات ويعطيك كل المعلومات التى تحتاجها والتي ستكون تحت مسئوليته بالتوقيع والختم من مكتبه.</p>
+            <p>(بيع – شراء – عقود عقارات وسيارات وتجارية)</p>
+          </div>
+        </div>
+
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="ar" class="service_icon" src="images\\icons\\travel-visa icon.png" alt="legal service">
+            <h3 lang="ar" name="service">إستخراج جميع أنواع التأشيرات للأجانب.</h3>
+          </div>
+          <div lang="ar" class="service_details">
+            <p>يجوز منح الأجانب إقامة مؤقتة لغير السياحة لمدة خمس سنوات قابلة للتجديد لأولئك الذين يمتلكون عقاراً واحداً أو أكثر بحد أدنى 400 الأف دولار ويمكن منح الأجانب إقامة مؤقتة لغير السياحة مدة ثلاث سنوات قابلة للتجديد لمن يملك عقارآ أو أكثر
+              على الأقل 200 ألف دولار.</p>
+            <p>مد تأشيرات السياحة من ٣٠ إلى ٩٠ يوم.</p>
+          </div>
+        </div>
+
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="ar" class="service_icon" src="images\\icons\\wedding icon.png" alt="legal service">
+            <h3 lang="ar" name="service">إنهاء إجراءات زواج الأجانب فى مصر وصياغة العقود الزوجية العرفية وجعلها فى السند القانونى والنفاذ.</h3>
+          </div>
+          <div lang="ar" class="service_details">
+            <p>المستندات المطلوبة لإتمام عقد الزواج :</p>
+            <p>بالنسبة للزوجة :</p>
+            <ul>
+              <li>جواز سفر سارى لمدة لا تقل عن ستة أشهر</li>
+              <li>إقامة سارية</li>
+              <li>شهادة صحية من أي مستشفى حكومي</li>
+              <li>8 صور شخصية</li>
+              <li>شهادة عدم ممانعة من سفارة البلد التابع لها الزوجة ببيان الحالة الأجتماعية والديانة</li>
+            </ul>
+            <p>بالنسبة للزوج:</p>
+            <ul>
+              <li>أصل البطاقة الشخصية وصورة ضوئية منها</li>
+              <li>شهادة صحية من أى مستشفى حكومى</li>
+              <li>قيد فردى ببيان الحالة الاجتماعية</li>
+            </ul>
+            <p>شروط حصول الأجنبية المتزوجة مصرى على الجنسية المصرية :</p>
+            <p class="custom_margin">تكتسب الزوجة الأجنبية الجنسية المصرية بعد مضى سنتين من العلاقة الزوجية بشرط عدم انتهاء العلاقة الزوجية عند تقديم طلب الحصول على الجنسية.</p>
+            <p>المستندات المطلوبة هى :</p>
+            <ul>
+              <li>عقد الزواج</li>
+              <li>شهادة ميلاد الزوج</li>
+              <li>شهادة ميلاد والده</li>
+              <li>عدد 4 صور حديثة للزوج والزوجة</li>
+              <li>صورة من جواز سفر الزوجة</li>
+              <li>قيد عائلى للزوج</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="ar" class="service_icon" src="images\\icons\\new-company icon.png" alt="legal service">
+            <h3 lang="ar" name="service">تأسيس شركات بجميع أنواعها.</h3>
+          </div>
+          <div lang="ar" class="service_details">
+            <p>من أهم الخدمات التي نقوم بها هى خدمة تأسيس الشركات الجديدة والقيام بالخدمات القانونية لتلك الشركات من إجراءات تأسيس وكل ما يتعلق بالمسائل القانونية المتعلقة بهذه الشركة من خلال الوكالة القانونية لها حيث نقوم بالمساعدة القانونية للمصريين والأجانب والكيانات التجارية للقيام بتأسيس قيام نشاطهم قانونا ومساعدتهم في اختيار الشكل القانونى لشركاتهم المناسب لنشاطهم طبقا للقانون المصرى حيث أنه لدينا خبرة كبيرة فى تأسيس الشركات فى أسرع وقت وبأعلى دقة وكفاءة بالإضافة لذلك نقوم بتقديم خدمة فتح فروع للشركات الأجنبية فى مصر وهى خدمة شديدة الصلة بتأسيس الشركات.</p>
+          </div>
+        </div>
+
+        <div class="service_card_container collapsible">
+          <div class="service_name_icon_row">
+            <img lang="ar" class="service_icon" src="images\\icons\\divorce-rings icon.png" alt="legal service">
+            <h3 lang="ar" name="service">إيجاد جميع أنواع الحلول لإنهاء زواج الأجانب فى مصر و إستخراج قسيمة الطلاق.</h3>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contact-us">
+
+      <div class="title_container">
+        <div class="horizontal_line"></div>
+        <div class="vertical_line"></div>
+        <h1 class="text" lang="ar" name="contactUs">Contact us</h1>
+      </div>
+
+      <div class="contact-us_container">
+        <div class="details_column">
+          <div class="contact">
+            <a href="mailto:hossam1983ale@gmail.com">
+              <img lang="ar" src="images\SVG\Icon zocial-email.svg" alt="">
+              <p>Hossam1983ale@gmail.com</p>
+            </a>
+          </div>
+          <div class="contact">
+            <a href="mailto:aljndyly31@gmail.com">
+              <img lang="ar" src="images\SVG\Icon zocial-email.svg" alt="">
+              <p>Aljndyly31@gmail.com</p>
+            </a>
+          </div>
+          <div class="contact">
+            <a href="https://api.whatsapp.com/send?phone=201004351757">
+              <img lang="ar" src="images\SVG\Icon awesome-whatsapp.svg" alt="">
+              <p>٠١٠٠٤٣٥١٧٥٧</p>
+            </a>
+          </div>
+          <div class="contact">
+            <a href="https://api.whatsapp.com/send?phone=201003921020">
+              <img lang="ar" src="images\SVG\Icon awesome-whatsapp.svg" alt="">
+              <p>٠١٠٠٣٩٢١٠٢٠</p>
+            </a>
+          </div>
+          <div class="contact">
+            <a href="https://www.facebook.com/hossam.fouad.39">
+              <img lang="ar" src="images\SVG\Icon awesome-facebook-f.svg" alt="">
+              <p>Hossam Fouad</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="details_column">
+          <div class="contact">
+            <a href="https://goo.gl/maps/GrNfWX9KUxb6NnP56">
+              <img lang="ar" src="images\SVG\Icon material-location-on.svg" alt="">
+              <p="translate" name="address">شارع الشيراتون, الغردقة البحر الأحمر, مصر.</p>
+            </a>
+          </div>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d886.9959993019417!2d33.837169903616!3d27.219652220189758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc856a520a580c93d!2sMcDonald&#39;s!5e0!3m2!1sen!2seg!4v1594135859574!5m2!1sen!2seg"
+            class="contact" style="margin-top: 10px;" width="80%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+
+      <div class="copyright_container">
+        <p class="created-by">Create by <a href="https://miminah.github.io/MiminaWebsite/tech.html">Mimina</a></p>
+        <p class="copyright">© Al-Dawleya 2020.</p>
+      </div>
+    </section>
+
+  </div>
+</body>
+
+
+<footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <script src="JS/languages.js" charset="utf-8"></script>
+  <script src="index.js" charset="utf-8"></script>
+</footer>
+
+</html>
